@@ -8,6 +8,21 @@ app.use(express.json());
 
 const repositories = [];
 
+app.get("/", (request, response) => {
+    const query = request.query;
+    return response.json([
+        " ------- API -------",
+        "Nome: Alisson de Andrade Araújo",
+        "Formação: Analise e Desenvolvimento de Sistemas",
+        "Descrição: Desenvolvedor Back-end, Front-end e Mobile",
+        "Site: http://alissondeandradearaujo.000webhostapp.com/",
+        "CV: https://alissonandradesistema.000webhostapp.com/curriculo/",
+        "Currículo Lattes: http://lattes.cnpq.br/7594653859194302/",
+        "Github: https://github.com/alissonandrade2020", 
+        "Rocketseat: https://app.rocketseat.com.br/me/alissondeandradearaujo", 
+        "Linkedin: https://www.linkedin.com/in/alisson-de-andrade-ara%C3%BAjo-160224190/"])
+});
+
 app.get("/repositories", (request, response) => {
   return response.json(repositories);
 });
