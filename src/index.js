@@ -13,7 +13,7 @@ app.get("/", (request, response) => {
     return response.json([
         " ------- API -------",
         "Nome: Alisson de Andrade Araújo",
-        "Formação: Analise e Desenvolvimento de Sistemas",
+        "Formação: Análise e Desenvolvimento de Sistemas",
         "Descrição: Desenvolvedor Back-end, Front-end e Mobile",
         "Site: http://alissondeandradearaujo.000webhostapp.com/",
         "CV: https://alissonandradesistema.000webhostapp.com/curriculo/",
